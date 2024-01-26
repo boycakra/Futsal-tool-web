@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="Home.css"> <!-- Adjust the path accordingly -->
+    <title>Your Title</title>
+</head>
+
+<body>
+ 
+
+    <!-- New timer-container div -->
+    <div id="image-container">
+        <div class="image-wrapper">
+            <img id="image1" src="images/lapangan.jpg" alt="body" />
+        </div>
+
+        
+
+        <div class="image-wrapper">
+            <img id="image2" src="images/lapangan.jpg" alt="body2" />
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="stats">
+            <!-- Lokasi table player sebelah kiri -->
+            <div id="stats1">
+                <h3>Status blue team</h3>
+                <div class="table-container">
+                    <table id="player1-table">
+                        <thead>
+                            <tr>
+                                <th>Mark Coordinate</th>
+                                <th>Value</th>
+                                <th>Player</th>
+                                <th>Timer</th> <!-- Add a new column for the timer -->
+                            </tr>
+                        </thead>
+                        <tbody id="mark-table-body">
+                            <!-- Table rows will be inserted dynamically using JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Lokasi table player sebelah kanan -->
+            <div id="stats2">
+                <h3>Status Red team </h3>
+                <div class="table-container">
+                    <table id="player2-table">
+                        <thead>
+                            <tr>
+                                <th>Mark Coordinate</th>
+                                <th>Value</th>
+                                <th>Player</th>
+                                <th>Timer</th> <!-- Add a new column for the timer -->
+                            </tr>
+                        </thead>
+                        <tbody id="mark-table-body-2"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="confirm">
+            <button id="Kill">Kill</button>
+            <button id="assisted">assisted</button>
+            <button id="Death">Death</button>
+            <button id="Buff Merah">Buff Merah</button>
+            <button id="Buff biru">Buff biru</button>
+        </div>
+        <button id="Lord">lord</button>
+        <button id="Turtle">turtle</button>
+        <!-- Footer | Text dan tombol bagian bawah pada masing-masing gambar -->
+        <div id="footer">
+            <div id="stats1-now">
+                <p>Ini yang kiri</p>
+                <button id="undo-player1">Undo</button>
+                <button id="Mid-lane">Mid-lane</button>
+                <button id="gold-lane">gold-lane</button>
+                <button id="Exp-lane">Exp-lane</button>
+                <button id="Roamer-lane">Roamer-lane</button>
+                <button id="Jungler-line">Jungler-line</button>
+                <button id="Inisiasi">Inisiasi</button> <!-- New Inisiasi button -->
+                <div id="coordinate-display"></div>
+                <div id="value-display"></div>
+                <button id="export-player1">Export Player 1</button>
+            </div>
+            <div id="stats2-now">
+                <p>Ini yang kanan</p>
+                <button id="undo-player2">Undo</button>
+                <button id="Mid-laneplayer2">Mid-lane</button>
+                <button id="gold-lanep2">gold-lane</button>
+                <button id="Exp-lanep2">Exp-lane</button>
+                <button id="Roamer-lanep2">Roamer-lane</button> <!-- New InisiasiPlayer2 button -->
+                <button id="Jungler-linep2">Jungler-line</button>
+                <button id="Inisiasiplayer2">Inisiasi</button> <!-- New InisiasiPlayer2 button -->
+                <div id="coordinate-display_player2"></div>
+                <div id="value-display_player2"></div>
+                <button id="export-player2">Export Player 2</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="full">
+        <!-- Lokasi table player sebelah kiri -->
+        <div id="stats-all">
+            <h3>Status match</h3>
+            <div class="match-container">
+                <table id="match-table">
+                    <thead>
+                        <tr>
+                            <th>Coordinates</th>
+                            <th>Value</th>
+                            <th>Player</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="match-table-body"></tbody>
+                </table>
+            </div>
+            <button id="export-Match">Export Match </button>
+        </div>
+    </div>
+    <script src="script.js" defer></script> <!-- Adjust the path accordingly -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
