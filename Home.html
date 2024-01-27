@@ -10,7 +10,37 @@
 </head>
 
 <body>
- 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Futsal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{url_for('index')}}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('uploads') }}">Uploads</a>
+            </li>
+      
+            
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>  
+                </li>
+            
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('register') }}">Sign up</a>  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <div class = "container">
+      
 
     <!-- New timer-container div -->
     <div id="image-container">
@@ -24,6 +54,8 @@
             <img id="image2" src="images/lapangan.jpg" alt="body2" />
         </div>
     </div>
+
+    
 
     <div id="container">
         <div id="stats">
@@ -79,10 +111,10 @@
             <div id="stats1-now">
                 <p>Ini yang kiri</p>
                 <button id="undo-player1">Undo</button>
-                <button id="Mid-lane">Mid-lane</button>
-                <button id="gold-lane">gold-lane</button>
-                <button id="Exp-lane">Exp-lane</button>
-                <button id="Roamer-lane">Roamer-lane</button>
+                <button id="Goalkeeper">Goalkeeper</button>
+                <button id="Defender">Defender</button>
+                <button id="Pivot">Pivot</button>
+                <button id="Wingers">Wingers</button>
                 <button id="Jungler-line">Jungler-line</button>
                 <button id="Inisiasi">Inisiasi</button> <!-- New Inisiasi button -->
                 <div id="coordinate-display"></div>
@@ -92,10 +124,10 @@
             <div id="stats2-now">
                 <p>Ini yang kanan</p>
                 <button id="undo-player2">Undo</button>
-                <button id="Mid-laneplayer2">Mid-lane</button>
-                <button id="gold-lanep2">gold-lane</button>
-                <button id="Exp-lanep2">Exp-lane</button>
-                <button id="Roamer-lanep2">Roamer-lane</button> <!-- New InisiasiPlayer2 button -->
+                <button id="Goalkeeperplayer2">Goalkeeper</button>
+                <button id="Defenderp2">Defender</button>
+                <button id="Pivotp2">Pivot</button>
+                <button id="Wingersp2">Wingers</button> <!-- New InisiasiPlayer2 button -->
                 <button id="Jungler-linep2">Jungler-line</button>
                 <button id="Inisiasiplayer2">Inisiasi</button> <!-- New InisiasiPlayer2 button -->
                 <div id="coordinate-display_player2"></div>
@@ -125,6 +157,7 @@
             <button id="export-Match">Export Match </button>
         </div>
     </div>
+  
     <script src="script.js" defer></script> <!-- Adjust the path accordingly -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

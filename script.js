@@ -61,21 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
             currentPlayer = player;
             currentMove = move;
 
-            if (currentMove === "Mid-lane") {
+            if (currentMove === "Goalkeeper") {
                 markingCircleClass = "lead-uppercut-mark-circle";
-                valueDisplays[currentPlayer].innerHTML = "Value: Mid-lane";
-            } else if (currentMove === "gold-lane") {
+                valueDisplays[currentPlayer].innerHTML = "Value: Goalkeeper";
+            } else if (currentMove === "Defender") {
                 markingCircleClass = "rear-uppercut-mark-circle";
-                valueDisplays[currentPlayer].innerHTML = "Value: gold-lane";
-            } else if (currentMove === "Exp-lane") {
+                valueDisplays[currentPlayer].innerHTML = "Value: Defender";
+            } else if (currentMove === "Pivot") {
                 markingCircleClass = "croos-mark-innercircle";
-                valueDisplays[currentPlayer].innerHTML = "Value: Exp-lane";
+                valueDisplays[currentPlayer].innerHTML = "Value: Pivot";
             } else if (currentMove === "Jungler-line") {
                 markingCircleClass = "Jungler-line-mark-innercircle";
                 valueDisplays[currentPlayer].innerHTML = "Value: Jungler-line";
-            } else if (currentMove === "Roamer-lane") {
-                markingCircleClass = "Roamer-lane-mark-innercircle";
-                valueDisplays[currentPlayer].innerHTML = "Value: Roamer-lane";
+            } else if (currentMove === "Wingers") {
+                markingCircleClass = "Wingers-mark-innercircle";
+                valueDisplays[currentPlayer].innerHTML = "Value: Wingers";
             } else if (currentMove === "Inisiasi") {
                 markingCircleClass = "Inisiasi-mark-circle";
                 valueDisplays[currentPlayer].innerHTML = "Value: Inisiasi";
@@ -105,18 +105,18 @@ document.addEventListener("DOMContentLoaded", function () {
         URL.revokeObjectURL(url);
     }
 
-    document.getElementById("Mid-lane").addEventListener("click", boxingMoveHandler("Player", "Mid-lane"));
-    document.getElementById("Exp-lane").addEventListener("click", boxingMoveHandler("Player", "Exp-lane"));
+    document.getElementById("Goalkeeper").addEventListener("click", boxingMoveHandler("Player", "Goalkeeper"));
+    document.getElementById("Pivot").addEventListener("click", boxingMoveHandler("Player", "Pivot"));
     document.getElementById("Inisiasi").addEventListener("click", boxingMoveHandler("Player", "Inisiasi"));
-    document.getElementById("Roamer-lane").addEventListener("click", boxingMoveHandler("Player", "Roamer-lane"));
-    document.getElementById("gold-lane").addEventListener("click", boxingMoveHandler("Player", "gold-lane"));
+    document.getElementById("Wingers").addEventListener("click", boxingMoveHandler("Player", "Wingers"));
+    document.getElementById("Defender").addEventListener("click", boxingMoveHandler("Player", "Defender"));
     document.getElementById("Jungler-line").addEventListener("click", boxingMoveHandler("Player", "Jungler-line"));
 
-    document.getElementById("Mid-laneplayer2").addEventListener("click", boxingMoveHandler("Player2", "Mid-lane"));
-    document.getElementById("Exp-lanep2").addEventListener("click", boxingMoveHandler("Player2", "Exp-lane"));
+    document.getElementById("Goalkeeperplayer2").addEventListener("click", boxingMoveHandler("Player2", "Goalkeeper"));
+    document.getElementById("Pivotp2").addEventListener("click", boxingMoveHandler("Player2", "Pivot"));
     document.getElementById("Inisiasiplayer2").addEventListener("click", boxingMoveHandler("Player2", "Inisiasi"));
-    document.getElementById("Roamer-lanep2").addEventListener("click", boxingMoveHandler("Player2", "Roamer-lane"));
-    document.getElementById("gold-lanep2").addEventListener("click", boxingMoveHandler("Player2", "gold-lane"));
+    document.getElementById("Wingersp2").addEventListener("click", boxingMoveHandler("Player2", "Wingers"));
+    document.getElementById("Defenderp2").addEventListener("click", boxingMoveHandler("Player2", "Defender"));
     document.getElementById("Jungler-linep2").addEventListener("click", boxingMoveHandler("Player2", "Jungler-line"));
 
     document.getElementById("Kill").addEventListener("click", function () {
@@ -172,10 +172,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("Turtle").addEventListener("click", function () {
     if (marking && currentPlayer && currentMove) {
         const moveClassMap = {
-            "Mid-lane": "mid-lane-turtle-mark-circle",
-            "gold-lane": "gold-lane-turtle-mark-circle",
-            "Exp-lane": "exp-lane-turtle-mark-circle",
-            "Roamer-lane": "roamer-lane-turtle-mark-circle",
+            "Goalkeeper": "Goalkeeper-turtle-mark-circle",
+            "Defender": "Defender-turtle-mark-circle",
+            "Pivot": "Pivot-turtle-mark-circle",
+            "Wingers": "Wingers-turtle-mark-circle",
             "Jungler-line": "jungle-lane-turtle-mark-circle",
         };
 
@@ -244,27 +244,27 @@ document.addEventListener("DOMContentLoaded", function () {
         switch (key) {
             case "z":
             case "Z":
-                // "Z" key is pressed, perform Mid-lane action
-                boxingMoveHandler("Player", "Mid-lane")();
+                // "Z" key is pressed, perform Goalkeeper action
+                boxingMoveHandler("Player", "Goalkeeper")();
                 break;
             case "x":
             case "X":
-                // "Z" key is pressed, perform Mid-lane action
-                boxingMoveHandler("Player", "gold-lane")();
+                // "Z" key is pressed, perform Goalkeeper action
+                boxingMoveHandler("Player", "Defender")();
                 break;
             case "c":
             case "C":
-                // "Z" key is pressed, perform Mid-lane action
-                boxingMoveHandler("Player", "Exp-lane")();
+                // "Z" key is pressed, perform Goalkeeper action
+                boxingMoveHandler("Player", "Pivot")();
                 break;
             case "v":
             case "V":
-                // "Z" key is pressed, perform Mid-lane action
-                boxingMoveHandler("Player", "Roamer-lane")();
+                // "Z" key is pressed, perform Goalkeeper action
+                boxingMoveHandler("Player", "Wingers")();
                 break;
             case "b":
             case "B":
-                // "Z" key is pressed, perform Mid-lane action
+                // "Z" key is pressed, perform Goalkeeper action
                 boxingMoveHandler("Player", "Jungler-line")();
                 break;
             case "a":
@@ -329,10 +329,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 // "M" key is pressed, perform Turtle action
                 if (marking && currentPlayer && currentMove) {
                     const moveClassMap = {
-                        "Mid-lane": "mid-lane-turtle-mark-circle",
-                        "gold-lane": "gold-lane-turtle-mark-circle",
-                        "Exp-lane": "exp-lane-turtle-mark-circle",
-                        "Roamer-lane": "roamer-lane-turtle-mark-circle",
+                        "Goalkeeper": "Goalkeeper-turtle-mark-circle",
+                        "Defender": "Defender-turtle-mark-circle",
+                        "Pivot": "Pivot-turtle-mark-circle",
+                        "Wingers": "Wingers-turtle-mark-circle",
                         "Jungler-line": "jungle-lane-turtle-mark-circle",
                     };
 
@@ -345,23 +345,23 @@ document.addEventListener("DOMContentLoaded", function () {
            
             case "q":
             case "Q":
-                // "Q" key is pressed, perform Mid-lane action for Player 2
-                boxingMoveHandler("Player2", "Mid-lane")();
+                // "Q" key is pressed, perform Goalkeeper action for Player 2
+                boxingMoveHandler("Player2", "Goalkeeper")();
                 break;
             case "w":
             case "W":
-                // "W" key is pressed, perform gold-lane action for Player 2
-                boxingMoveHandler("Player2", "gold-lane")();
+                // "W" key is pressed, perform Defender action for Player 2
+                boxingMoveHandler("Player2", "Defender")();
                 break;
             case "e":
             case "E":
-                // "E" key is pressed, perform Exp-lane action for Player 2
-                boxingMoveHandler("Player2", "Exp-lane")();
+                // "E" key is pressed, perform Pivot action for Player 2
+                boxingMoveHandler("Player2", "Pivot")();
                 break;
             case "r":
             case "R":
-                // "R" key is pressed, perform Roamer-lane action for Player 2
-                boxingMoveHandler("Player2", "Roamer-lane")();
+                // "R" key is pressed, perform Wingers action for Player 2
+                boxingMoveHandler("Player2", "Wingers")();
                 break;
             case "t":
             case "T":
