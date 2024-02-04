@@ -956,7 +956,7 @@ img {
 
 
 
-.Jungler-line-mark-innercircle {
+.Wingers-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -965,7 +965,7 @@ img {
     pointer-events: none; 
 }
 
-.Jungler-line-Fail-mark-circle {
+.Wingers-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -974,7 +974,7 @@ img {
     border: 2px solid greenyellow;
     pointer-events: none; 
 }
-.Jungler-line-assisted-mark-circle {
+.Wingers-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -985,7 +985,7 @@ img {
 }
 
 /* Vertical line of the Pivothair */
-.Jungler-line-assisted-mark-circle::before {
+.Wingers-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -997,7 +997,7 @@ img {
 }
 
 /* Horizontal line of the Pivothair */
-.Jungler-line-assisted-mark-circle::after {
+.Wingers-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -1011,7 +1011,7 @@ img {
 
 
 /* For Buff-Merah-mark-circle */
-.Jungler-lineBuff-Merah-mark-circle {
+.WingersBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1021,7 +1021,7 @@ img {
     pointer-events: none; 
 }
 
-.Jungler-lineBuff-Merah-mark-circle::before {
+.WingersBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -1034,7 +1034,7 @@ img {
 }
 
 /* For Buff-Merah-mark-circle */
-.Jungler-lineBuff-biru-mark-circle {
+.WingersBuff-biru-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1044,7 +1044,7 @@ img {
     pointer-events: none; 
 }
 
-.Jungler-lineBuff-biru-mark-circle::before {
+.WingersBuff-biru-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -1056,7 +1056,7 @@ img {
     background: white;
 }
 
-.Jungler-lineBuff-lord-mark-square {
+.WingersBuff-lord-mark-square {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -1065,7 +1065,7 @@ img {
     pointer-events: none;
 }
 
-.Jungler-lineBuff-lord-mark-square::before {
+.WingersBuff-lord-mark-square::before {
     content: "";
     width: 50%;
     height: 50%;
@@ -1076,7 +1076,7 @@ img {
 }
 
 /* For Death-mark-circle */
-.Jungler-line-Death-mark-circle {
+.Wingers-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -1085,7 +1085,7 @@ img {
     pointer-events: none; 
 }
 
-.Jungler-line-Death-mark-circle::before {
+.Wingers-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;

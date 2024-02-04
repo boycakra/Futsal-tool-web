@@ -1,6 +1,6 @@
 
 /* Mid Lane Turtle Mark Circle */
-.mid-lane-turtle-mark-circle {
+.Goalkeeper-turtle-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -10,7 +10,7 @@
     pointer-events: none; 
 }
 
-.mid-lane-turtle-mark-circle::before {
+.Goalkeeper-turtle-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -46,7 +46,7 @@
 }
 
 /* Exp Lane Turtle Mark Circle */
-.exp-lane-turtle-mark-circle {
+.Pivot-turtle-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -56,7 +56,7 @@
     pointer-events: none; 
 }
 
-.exp-lane-turtle-mark-circle::before {
+.Pivot-turtle-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -69,7 +69,7 @@
 }
 
 /* Roamer Lane Turtle Mark Circle */
-.roamer-lane-turtle-mark-circle {
+.Wingers-turtle-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -79,7 +79,7 @@
     pointer-events: none; 
 }
 
-.roamer-lane-turtle-mark-circle::before {
+.Wingers-turtle-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -128,7 +128,7 @@
     pointer-events: none; 
 }
 
-.Mid-lane-Fail-mark-circle {
+.Goalkeeper-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -137,7 +137,7 @@
     border: 2px solid red;
     pointer-events: none; 
 }
-.Mid-lane-assisted-mark-circle {
+.Goalkeeper-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -147,8 +147,8 @@
     pointer-events: none; 
 }
 
-/* Vertical line of the Exp-lanehair */
-.Mid-lane-assisted-mark-circle::before {
+/* Vertical line of the Pivothair */
+.Goalkeeper-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -159,8 +159,8 @@
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the Exp-lanehair */
-.Mid-lane-assisted-mark-circle::after {
+/* Horizontal line of the Pivothair */
+.Goalkeeper-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -171,7 +171,7 @@
     transform: translateY(-50%);        /* Centering the line */
 }
 /* For Buff-Merah-mark-circle */
-.Mid-laneBuff-Merah-mark-circle {
+.GoalkeeperBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -181,7 +181,7 @@
     pointer-events: none; 
 }
 
-.Mid-laneBuff-Merah-mark-circle::before {
+.GoalkeeperBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -194,7 +194,7 @@
 }
 
 /* For Buff-biru-mark-circle */
-.Mid-laneBuff-biru-mark-circle {
+.GoalkeeperBuff-biru-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -204,7 +204,7 @@
     pointer-events: none; 
 }
 
-.Mid-laneBuff-biru-mark-circle::before {
+.GoalkeeperBuff-biru-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -217,7 +217,7 @@
 }
 
 /* For Buff-lord-mark-square */
-.Mid-laneBuff-lord-mark-square {
+.GoalkeeperBuff-lord-mark-square {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -226,7 +226,7 @@
     pointer-events: none;
 }
 
-.Mid-laneBuff-lord-mark-square::before {
+.GoalkeeperBuff-lord-mark-square::before {
     content: "";
     width: 50%;
     height: 50%;
@@ -238,7 +238,7 @@
 
 
 /* For Death-mark-circle */
-.Mid-lane-Death-mark-circle {
+.Goalkeeper-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -247,7 +247,7 @@
     pointer-events: none; 
 }
 
-.Mid-lane-Death-mark-circle::before {
+.Goalkeeper-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -286,7 +286,7 @@
     pointer-events: none; 
 }
 
-/* Vertical line of the Exp-lanehair */
+/* Vertical line of the Pivothair */
 .gold-lane-assisted-mark-circle::before {
     content: "";
     position: absolute;
@@ -298,7 +298,7 @@
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the Exp-lanehair */
+/* Horizontal line of the Pivothair */
 .gold-lane-assisted-mark-circle::after {
     content: "";
     position: absolute;
@@ -429,7 +429,7 @@
     pointer-events: none; 
 }
 
-/* Vertical line of the Exp-lanehair */
+/* Vertical line of the Pivothair */
 .Inisiasi-assisted-mark-circle::before {
     content: "";
     position: absolute;
@@ -441,7 +441,7 @@
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the Exp-lanehair */
+/* Horizontal line of the Pivothair */
 .Inisiasi-assisted-mark-circle::after {
     content: "";
     position: absolute;
@@ -509,7 +509,7 @@
     pointer-events: none; 
 }
 
-.Exp-lane-Fail-mark-circle {
+.Pivot-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -518,7 +518,7 @@
     border: 2px solid yellow;
     pointer-events: none; 
 }
-.Exp-lane-assisted-mark-circle {
+.Pivot-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -528,8 +528,8 @@
     pointer-events: none; 
 }
 
-/* Vertical line of the Exp-lanehair */
-.Exp-lane-assisted-mark-circle::before {
+/* Vertical line of the Pivothair */
+.Pivot-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -540,8 +540,8 @@
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the Exp-lanehair */
-.Exp-lane-assisted-mark-circle::after {
+/* Horizontal line of the Pivothair */
+.Pivot-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -555,7 +555,7 @@
 
 
 /* For Buff-Merah-mark-circle */
-.Exp-laneBuff-Merah-mark-circle {
+.PivotBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -565,7 +565,7 @@
     pointer-events: none; 
 }
 
-.Exp-laneBuff-Merah-mark-circle::before {
+.PivotBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -578,7 +578,7 @@
 }
 
 /* For Buff-Merah-mark-circle */
-.Exp-laneBuff-biru-mark-circle {
+.PivotBuff-biru-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -588,7 +588,7 @@
     pointer-events: none; 
 }
 
-.Exp-laneBuff-biru-mark-circle::before {
+.PivotBuff-biru-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -599,7 +599,7 @@
     transform: translate(-50%, -50%);
     background: white;
 }
-.Exp-laneBuff-lord-mark-square {
+.PivotBuff-lord-mark-square {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -608,7 +608,7 @@
     pointer-events: none;
 }
 
-.Exp-laneBuff-lord-mark-square::before {
+.PivotBuff-lord-mark-square::before {
     content: "";
     width: 50%;
     height: 50%;
@@ -620,7 +620,7 @@
 
 
 /* For Death-mark-circle */
-.Exp-lane-Death-mark-circle {
+.Pivot-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -629,7 +629,7 @@
     pointer-events: none; 
 }
 
-.Exp-lane-Death-mark-circle::before {
+.Pivot-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -643,7 +643,7 @@
 
 
 
-.Roamer-lane-mark-innercircle {
+.Wingers-mark-innercircle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -652,7 +652,7 @@
     pointer-events: none; 
 }
 
-.Roamer-lane-Fail-mark-circle {
+.Wingers-Fail-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -661,7 +661,7 @@
     border: 2px solid green;
     pointer-events: none; 
 }
-.Roamer-lane-assisted-mark-circle {
+.Wingers-assisted-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;                 /* Makes it a circle */
@@ -671,8 +671,8 @@
     pointer-events: none; 
 }
 
-/* Vertical line of the Exp-lanehair */
-.Roamer-lane-assisted-mark-circle::before {
+/* Vertical line of the Pivothair */
+.Wingers-assisted-mark-circle::before {
     content: "";
     position: absolute;
     top: 0;
@@ -683,8 +683,8 @@
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the Exp-lanehair */
-.Roamer-lane-assisted-mark-circle::after {
+/* Horizontal line of the Pivothair */
+.Wingers-assisted-mark-circle::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -697,7 +697,7 @@
 
 
 /* For Buff-Merah-mark-circle */
-.Roamer-laneBuff-Merah-mark-circle {
+.WingersBuff-Merah-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -707,7 +707,7 @@
     pointer-events: none; 
 }
 
-.Roamer-laneBuff-Merah-mark-circle::before {
+.WingersBuff-Merah-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -719,7 +719,7 @@
     background: white;
 }
 /* For Buff-Merah-mark-circle */
-.Roamer-laneBuff-biru-mark-circle {
+.WingersBuff-biru-mark-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -729,7 +729,7 @@
     pointer-events: none; 
 }
 
-.Roamer-laneBuff-biru-mark-circle::before {
+.WingersBuff-biru-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -741,7 +741,7 @@
     background: white;
 }
 
-.Roamer-laneBuff-lord-mark-square {
+.WingersBuff-lord-mark-square {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -750,7 +750,7 @@
     pointer-events: none;
 }
 
-.Roamer-laneBuff-lord-mark-square::before {
+.WingersBuff-lord-mark-square::before {
     content: "";
     width: 50%;
     height: 50%;
@@ -761,7 +761,7 @@
 }
 
 /* For Death-mark-circle */
-.Roamer-lane-Death-mark-circle {
+.Wingers-Death-mark-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -770,7 +770,7 @@
     pointer-events: none; 
 }
 
-.Roamer-lane-Death-mark-circle::before {
+.Wingers-Death-mark-circle::before {
     content: "";
     width: 4px;
     height: 4px;
@@ -812,7 +812,7 @@
     pointer-events: none; 
 }
 
-/* Vertical line of the Exp-lanehair */
+/* Vertical line of the Pivothair */
 .Jungler-line-assisted-mark-circle::before {
     content: "";
     position: absolute;
@@ -824,7 +824,7 @@
     transform: translateX(-50%);        /* Centering the line */
 }
 
-/* Horizontal line of the Exp-lanehair */
+/* Horizontal line of the Pivothair */
 .Jungler-line-assisted-mark-circle::after {
     content: "";
     position: absolute;
